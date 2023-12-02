@@ -4,10 +4,17 @@ class RevTextField extends StatelessWidget {
 RevTextField({super.key});
 
   TextEditingController userController = TextEditingController();
+
   TextEditingController emailController = TextEditingController();
+
   TextEditingController phoneController = TextEditingController();
+
   TextEditingController passwordController = TextEditingController();
+
   TextEditingController messageController = TextEditingController();
+
+  String? textVal;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -43,6 +50,7 @@ RevTextField({super.key});
                 icon: Icon(Icons.email),
                 contentPadding: EdgeInsets.symmetric(vertical: 2.0, horizontal: 10),
               ),
+              keyboardType: TextInputType.emailAddress,
               maxLines: 1,
             ),
             SizedBox(height: 12,),
@@ -78,6 +86,7 @@ RevTextField({super.key});
               minLines: 5,
               onChanged: (val){
                 print(val);
+                //textVal = val;
               },
             ),
             MaterialButton(onPressed: (){
@@ -86,7 +95,9 @@ RevTextField({super.key});
               print(emailController.text);
               print(passwordController.text);
               print(messageController.text);
-            }, child: Text('Sign up', style: TextStyle(fontSize: 20, color: Colors.white), ),color: Colors.purple[800],)
+            }, child: Text('Sign up', style: TextStyle(fontSize: 20, color: Colors.white), ),color: Colors.purple[800],
+            ),
+            //Text('$textVal'),
           ],
         ),
       ),
