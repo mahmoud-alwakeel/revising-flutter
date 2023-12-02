@@ -18,7 +18,9 @@ RevTextField({super.key});
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Text field'),),
+      appBar: AppBar(
+        
+        title: const Text('Text field'),),
       body: Container(
         padding: const EdgeInsets.all(12),
         child: Column(

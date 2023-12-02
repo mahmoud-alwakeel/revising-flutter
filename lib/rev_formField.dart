@@ -17,6 +17,7 @@ class _RevTxtFormFieldState extends State<RevTxtFormField> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        centerTitle: false,
         title: Text('text form field'),
       ),
       body: Container(
