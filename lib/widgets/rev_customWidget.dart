@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:revising_everything/home_screen.dart';
+import 'package:revising_everything/widgets/home_screen.dart';
 
 class RevCustomWidget extends StatelessWidget {
   const RevCustomWidget({super.key});
